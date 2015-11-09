@@ -1,0 +1,24 @@
+info face="ºÚÌå" size=18 bold=1 italic=0 charset="" unicode=1 stretchH=100 smooth=1 aa=1 padding=10,10,10,10 spacing=1,1 outline=0
+common lineHeight=18 base=15 scaleW=512 scaleH=512 pages=1 packed=0 alphaChnl=0 redChnl=3 greenChnl=3 blueChnl=3
+page id=0 file="font4_0.png"
+chars count=20
+char id=43   x=479   y=0     width=30    height=28    xoffset=-10   yoffset=-6    xadvance=10    page=0  chnl=15
+char id=12289 x=231   y=38    width=26    height=26    xoffset=-8    yoffset=0     xadvance=19    page=0  chnl=15
+char id=20987 x=240   y=0     width=39    height=36    xoffset=-10   yoffset=-9    xadvance=19    page=0  chnl=15
+char id=21270 x=280   y=0     width=39    height=36    xoffset=-10   yoffset=-9    xadvance=19    page=0  chnl=15
+char id=21453 x=440   y=0     width=38    height=36    xoffset=-10   yoffset=-9    xadvance=19    page=0  chnl=15
+char id=21560 x=0     y=38    width=38    height=36    xoffset=-9    yoffset=-9    xadvance=19    page=0  chnl=15
+char id=24369 x=39    y=38    width=37    height=36    xoffset=-9    yoffset=-9    xadvance=19    page=0  chnl=15
+char id=24377 x=0     y=0     width=39    height=37    xoffset=-10   yoffset=-10   xadvance=19    page=0  chnl=15
+char id=25377 x=40    y=0     width=39    height=37    xoffset=-10   yoffset=-10   xadvance=19    page=0  chnl=15
+char id=26292 x=320   y=0     width=39    height=36    xoffset=-10   yoffset=-9    xadvance=19    page=0  chnl=15
+char id=26684 x=360   y=0     width=39    height=36    xoffset=-10   yoffset=-9    xadvance=19    page=0  chnl=15
+char id=29378 x=80    y=0     width=39    height=37    xoffset=-10   yoffset=-10   xadvance=19    page=0  chnl=15
+char id=30002 x=77    y=38    width=37    height=36    xoffset=-9    yoffset=-9    xadvance=19    page=0  chnl=15
+char id=30462 x=120   y=0     width=39    height=37    xoffset=-10   yoffset=-10   xadvance=19    page=0  chnl=15
+char id=30772 x=160   y=0     width=39    height=37    xoffset=-10   yoffset=-10   xadvance=19    page=0  chnl=15
+char id=32905 x=193   y=38    width=37    height=35    xoffset=-9    yoffset=-9    xadvance=19    page=0  chnl=15
+char id=34880 x=153   y=38    width=39    height=35    xoffset=-10   yoffset=-9    xadvance=19    page=0  chnl=15
+char id=36830 x=200   y=0     width=39    height=37    xoffset=-10   yoffset=-10   xadvance=19    page=0  chnl=15
+char id=36991 x=400   y=0     width=39    height=36    xoffset=-10   yoffset=-10   xadvance=19    page=0  chnl=15
+char id=38378 x=115   y=38    width=37    height=36    xoffset=-9    yoffset=-9    xadvance=19    page=0  chnl=15

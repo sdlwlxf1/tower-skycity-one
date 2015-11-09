@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="22" height="26" tilewidth="20" tileheight="20">
+ <properties>
+  <property name="fog" value=""/>
+ </properties>
+ <tileset firstgid="1" name="none" tilewidth="20" tileheight="20">
+  <image source="image/none.png" width="21" height="20"/>
+ </tileset>
+ <tileset firstgid="2" name="actor" tilewidth="60" tileheight="80">
+  <tileoffset x="-10" y="0"/>
+  <image source="../ResourcesNative/image/actor.png" width="2048" height="2048"/>
+  <tile id="0">
+   <properties>
+    <property name="typeId" value="1001001"/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="typeId" value="1001001"/>
+   </properties>
+  </tile>
+  <tile id="12">
+   <properties>
+    <property name="typeId" value="1002002"/>
+   </properties>
+  </tile>
+  <tile id="15">
+   <properties>
+    <property name="typeId" value="1002003"/>
+   </properties>
+  </tile>
+  <tile id="24">
+   <properties>
+    <property name="typeId" value="1003001"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="852" name="item" tilewidth="60" tileheight="80">
+  <tileoffset x="-10" y="0"/>
+  <image source="../ResourcesNative/image/item.png" width="2048" height="2048"/>
+  <tile id="0">
+   <properties>
+    <property name="typeId" value="2001001"/>
+   </properties>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="typeId" value="2001002"/>
+   </properties>
+  </tile>
+  <tile id="8">
+   <properties>
+    <property name="typeId" value="2001003"/>
+   </properties>
+  </tile>
+  <tile id="12">
+   <properties>
+    <property name="typeId" value="2001004"/>
+   </properties>
+  </tile>
+  <tile id="16">
+   <properties>
+    <property name="typeId" value="2001005"/>
+   </properties>
+  </tile>
+  <tile id="20">
+   <properties>
+    <property name="typeId" value="2001006"/>
+   </properties>
+  </tile>
+  <tile id="24">
+   <properties>
+    <property name="typeId" value="2001007"/>
+   </properties>
+  </tile>
+  <tile id="28">
+   <properties>
+    <property name="typeId" value="2002001"/>
+   </properties>
+  </tile>
+  <tile id="32">
+   <properties>
+    <property name="typeId" value="2002003"/>
+   </properties>
+  </tile>
+  <tile id="34">
+   <properties>
+    <property name="typeId" value="2002004"/>
+   </properties>
+  </tile>
+  <tile id="35">
+   <properties>
+    <property name="typeId" value="17"/>
+   </properties>
+  </tile>
+  <tile id="38">
+   <properties>
+    <property name="typeId" value="2002005"/>
+   </properties>
+  </tile>
+  <tile id="39">
+   <properties>
+    <property name="typeId" value="2002006"/>
+   </properties>
+  </tile>
+  <tile id="41">
+   <properties>
+    <property name="typeId" value="2003002"/>
+   </properties>
+  </tile>
+  <tile id="43">
+   <properties>
+    <property name="typeId" value="2003004"/>
+   </properties>
+  </tile>
+  <tile id="44">
+   <properties>
+    <property name="typeId" value="2003005"/>
+   </properties>
+  </tile>
+  <tile id="45">
+   <properties>
+    <property name="typeId" value="2003006"/>
+   </properties>
+  </tile>
+  <tile id="61">
+   <properties>
+    <property name="typeId" value="20008"/>
+   </properties>
+  </tile>
+  <tile id="63">
+   <properties>
+    <property name="typeId" value="20012"/>
+   </properties>
+  </tile>
+  <tile id="64">
+   <properties>
+    <property name="typeId" value="20013"/>
+   </properties>
+  </tile>
+  <tile id="68">
+   <properties>
+    <property name="typeId" value="2005001"/>
+   </properties>
+  </tile>
+  <tile id="95">
+   <properties>
+    <property name="typeId" value="2005014"/>
+   </properties>
+  </tile>
+  <tile id="99">
+   <properties>
+    <property name="typeId" value="2005011"/>
+   </properties>
+  </tile>
+  <tile id="100">
+   <properties>
+    <property name="typeId" value="2005012"/>
+   </properties>
+  </tile>
+  <tile id="101">
+   <properties>
+    <property name="typeId" value="2005013"/>
+   </properties>
+  </tile>
+  <tile id="102">
+   <properties>
+    <property name="typeId" value="2005014"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="1702" name="effect" tilewidth="60" tileheight="80">
+  <tileoffset x="-10" y="0"/>
+  <image source="../ResourcesNative/image/effect.png" width="2048" height="2048"/>
+  <tile id="0">
+   <properties>
+    <property name="typeId" value="3001001"/>
+   </properties>
+  </tile>
+  <tile id="8">
+   <properties>
+    <property name="typeId" value="3001002"/>
+   </properties>
+  </tile>
+  <tile id="14">
+   <properties>
+    <property name="typeId" value="3001003"/>
+   </properties>
+  </tile>
+  <tile id="34">
+   <properties>
+    <property name="typeId" value="3001007"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="2552" name="wall" tilewidth="40" tileheight="40">
+  <image source="image/tileSets/wall.png" width="512" height="512"/>
+ </tileset>
+ <tileset firstgid="2696" name="terrain0" tilewidth="20" tileheight="20">
+  <image source="image/autoTiles/terrain0.png" width="2048" height="2048"/>
+  <tile id="6120">
+   <properties>
+    <property name="block" value="1"/>
+   </properties>
+  </tile>
+  <tile id="6122">
+   <properties>
+    <property name="block" value="1"/>
+   </properties>
+  </tile>
+  <tile id="6124">
+   <properties>
+    <property name="block" value="1"/>
+   </properties>
+  </tile>
+  <tile id="6125">
+   <properties>
+    <property name="block" value="1"/>
+   </properties>
+  </tile>
+  <tile id="6222">
+   <properties>
+    <property name="block" value="1"/>
+   </properties>
+  </tile>
+  <tile id="6329">
+   <properties>
+    <property name="block" value="1"/>
+   </properties>
+  </tile>
+  <tile id="6631">
+   <properties>
+    <property name="block" value="1"/>
+   </properties>
+  </tile>
+  <tile id="6632">
+   <properties>
+    <property name="block" value="1"/>
+   </properties>
+  </tile>
+  <tile id="6634">
+   <properties>
+    <property name="block" value="1"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="13100" name="set" tilewidth="20" tileheight="20">
+  <image source="image/tileSets/set.png" width="2048" height="2048"/>
+  <terraintypes>
+   <terrain name="砖地" tile="4561"/>
+   <terrain name="砖台" tile="4497"/>
+  </terraintypes>
+  <tile id="4368" terrain="1,1,1,0"/>
+  <tile id="4369" terrain="1,1,0,1"/>
+  <tile id="4370" terrain="1,0,0,0"/>
+  <tile id="4371" terrain="0,1,0,0"/>
+  <tile id="4432" terrain="1,0,1,1"/>
+  <tile id="4433" terrain="0,1,1,1"/>
+  <tile id="4434" terrain="0,0,1,0"/>
+  <tile id="4435" terrain="0,0,0,1"/>
+  <tile id="4496" terrain="1,1,1,0"/>
+  <tile id="4497" terrain="1,1,0,0"/>
+  <tile id="4498" terrain="1,1,0,0"/>
+  <tile id="4499" terrain="1,1,0,1"/>
+  <tile id="4560" terrain="1,0,1,0"/>
+  <tile id="4561" terrain="0,0,0,0"/>
+  <tile id="4562" terrain="0,0,0,0"/>
+  <tile id="4563" terrain="0,1,0,1"/>
+  <tile id="4624" terrain="1,0,1,0"/>
+  <tile id="4625" terrain="0,0,0,0"/>
+  <tile id="4626" terrain="0,0,0,0"/>
+  <tile id="4627" terrain="0,1,0,1"/>
+  <tile id="4688" terrain="1,0,1,1"/>
+  <tile id="4689" terrain="0,0,1,1"/>
+  <tile id="4690" terrain="0,0,1,1"/>
+  <tile id="4691" terrain="0,1,1,1"/>
+ </tileset>
+ <layer name="ground" width="22" height="26">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC7NxZmCwBWIbKtOLgHgxDWhqu3PUvaPuHXXvqHtH3Tvq3lH3Dn/3AgCdpGkR8AgAAA==
+  </data>
+ </layer>
+ <layer name="块层 5" width="22" height="26">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+2OyQkDMRAE5+kziZXC8JmQ97IT8pmR10cyW5+Bgd2P5mMMaigKCaZpkZycnF+nKkRqaIxbOBqfivTeJzcdvOANn5H319G7CiJr2MAWdiNvT++Zuwtcw3Dnjb877EN67ySKTGEWhzvn/C3g4ei1e9W6U+3ptXvVulO9jOm9B25KqIxraIxbR29Ozj+kBx9MK+/wCAAA
+  </data>
+ </layer>
+ <layer name="under" width="22" height="26">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC1tjycCwFojXAfEaNHa1FQPDJCA92RKTrrBCVYusdz0Q3wPK3wfiB0D80AqT/wOo5qclJk1IHwxwuTEwcLsxYIAUMwRORWLDAA9QDy+aPrcQTHPQwSkzBD6NxKYUEHIvuYBW7gUBdPcSC0SCGRj6XBgY+oG4Ohi7uTD34jIXph8beIDFTBA4heReSsLglBlqfOHCpNozqnZULTIgJU+RopaWfkMvv6iRL9ABueUOKe4n1X34yiNKyzNcgJbhgFxfUANoWDMwaEKxhjWCTynoA5rRD8V91gg+IQAA3pPvPfAIAAA=
+  </data>
+ </layer>
+ <layer name="块层 4" width="22" height="26">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgYGCQsmBgsHJhYLAG4g4nBoZOIAaBRW4MDIvdGDDAEqDYUiAWCWZgaAOqbXfCVKNlwsCgDcQLgGYuBOJ3QDXvoeo43BkYON0x9XABxbiBuApo7hug2rdYzJ0ANHOiCaY4COQB9eZjMbcAKFaIRRwE6uwZGOrtscvBwBWg3qtY9F8Dil3HYe4ToJlPCZg7EoCiBYK9xBW7OLHAyw+7+AYc4rQAChaE3b7BmT5uwQa8CNi9AJhvF2LJ04TARgJhzAbMB+w48gIIrALG/WpX3PK4QA7QzFw85goA/SJIhn8uAc28jGYuLeON2PReAnRTKR7/kqv+FlDNbSLUVQfjV09sXnPwYGBw9CBOLTEAlv6WAc1cToG53hSUFaDyaykZaZgU4ARMg87QdAhKj2HGDAzhxqSZIRAJzBORqGIrgGatRErfe4Bm7iXS3CBLBoZgS1SxjSTmlVWewPzviVu+ClhXVhNRX6LHn4AX0K9euNU8AJr5EMlcANJTP//wCAAA
+  </data>
+ </layer>
+ <objectgroup name="stage" width="22" height="26">
+  <object gid="951" x="189" y="34"/>
+  <object gid="952" x="190" y="516"/>
+  <object name="switch_01020510" gid="953" x="188" y="116"/>
+  <object gid="953" x="389" y="76">
+   <properties>
+    <property name="triggerD" value="touchOn$target:chatManager|type:set~~~id:49"/>
+   </properties>
+  </object>
+  <object name="switch_01020112_1" gid="953" x="28" y="35"/>
+  <object name="switch_01020112_3" gid="953" x="29" y="34">
+   <properties>
+    <property name="triggerD" value="stepOn$type:convey~~~towerId:2|floorId:4|site:{5,0}"/>
+   </properties>
+  </object>
+  <object name="switch_01020112_2" gid="1023" x="30" y="34">
+   <properties>
+    <property name="notSmash" value=""/>
+   </properties>
+  </object>
+  <object gid="953" x="187" y="395">
+   <properties>
+    <property name="triggerD" value="touchOn$target:detect|type:paper~~~textNum:9"/>
+   </properties>
+  </object>
+  <object gid="953" x="-9" y="474">
+   <properties>
+    <property name="triggerD" value="stepOn$target:chatManager|type:set~~~id:2685"/>
+   </properties>
+  </object>
+  <object gid="953" x="348" y="154">
+   <properties>
+    <property name="triggerD" value="touchOn$target:chatManager|type:set~~~id:2737"/>
+   </properties>
+  </object>
+  <object gid="953" x="348" y="435">
+   <properties>
+    <property name="triggerD" value="touchOn$target:chatManager|type:set~~~id:2717"/>
+   </properties>
+  </object>
+  <object gid="953" x="309" y="354">
+   <properties>
+    <property name="triggerD" value="touchOn$target:chatManager|type:set~~~id:2697"/>
+   </properties>
+  </object>
+  <object gid="953" x="349" y="516">
+   <properties>
+    <property name="triggerD" value="touchOn$target:chatManager|type:set~~~id:2705"/>
+   </properties>
+  </object>
+  <object gid="953" x="349" y="275">
+   <properties>
+    <property name="triggerD" value="stepOn$target:chatManager|type:set~~~id:2725"/>
+   </properties>
+  </object>
+  <object gid="1770" x="188" y="36"/>
+  <object gid="1770" x="191" y="517"/>
+ </objectgroup>
+ <layer name="above" width="22" height="26">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgGAX0ADHODAyxztTXfwgodpgCc3Hp13BhYNB0Id9cSvWPAtoAkWgGBtFo6ptbBTSzmgbmjoLBCUbLs1EwFAEA8od0TPAIAAA=
+  </data>
+ </layer>
+</map>

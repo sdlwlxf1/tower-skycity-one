@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.lxf.game.tower"
+      android:versionCode="1"
+      android:versionName="1.0.5"
+      android:installLocation="auto">
+
+    <uses-sdk android:minSdkVersion="9"/>
+    <uses-feature android:glEsVersion="0x00020000" />
+
+    <application android:label="@string/app_name"
+                 android:icon="@drawable/icon">
+					 
+        <!-- Tell Cocos2dxActivity the name of our .so -->
+        <meta-data android:name="android.app.lib_name"
+	              android:value="cocos2dcpp" />
+
+        <activity android:name="org.cocos2dx.cpp.AppActivity"
+            	  android:exported="true"
+            	  android:launchMode="singleTop"
+                  android:label="@string/app_name"
+                  android:screenOrientation="portrait"
+                  android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+                  android:configChanges="orientation">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        
+        <service
+            android:name="mm.purchasesdk.iapservice.PurchaseService"
+            android:exported="true" >
+
+            <!-- android:process="mm.iapServices" > -->
+            <intent-filter android:priority="301" >
+                <action android:name="com.aspire.purchaseservice.BIND" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter android:priority="301" >
+                <action android:name="com.lxf.game.tower.purchaseservice.BIND" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <intent-filter android:priority="301" >
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.SAFIAP.COMPONENT" >
+                </category>
+            </intent-filter>
+        </service>
+        <!-- android:excludeFromRecents="true" -->
+        <!-- android:launchMode="singleInstance" -->
+        <activity
+            android:name="mm.purchasesdk.iapservice.BillingLayoutActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.Translucent">
+            <intent-filter android:priority="301" >
+                <action android:name="com.lxf.game.tower.com.mmiap.activity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+         <!-- android:process="safiap.framework.safframeworkmanager" begin -->
+        <service
+            android:name="safiap.framework.SafFrameworkManager"
+            android:exported="true"
+            android:process="safiap.framework" >
+            <intent-filter android:priority="630" >
+
+            <!-- ID for services declared in AIDL -->
+        		<action android:name="safiap.framework.sdk.ISAFFramework" />
+            </intent-filter>
+            <intent-filter android:priority="630" >
+                <!-- ID for services declared in AIDL -->
+                <action android:name="safiap.framework.ACTION_START_DOWNLOAD" />
+        	</intent-filter>
+        	<intent-filter android:priority="630" >
+                <!-- ID for services declared in AIDL -->
+                <action android:name="safiap.framework.ACTION_CHECK_UPDATE" />
+            </intent-filter>
+        </service>
+        <!-- receivers -->
+        <receiver android:name="safiap.framework.CheckUpdateReceiver" >
+            <intent-filter>
+                <action android:name="safiap.framework.ACTION_CANCEL_NOTIFICATION" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="safiap.GET_SHARED_DATA" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="safiap.framework.ACTION_SET_TIMER" />
+            </intent-filter>
+        </receiver>
+        <activity
+            android:name="safiap.framework.ui.UpdateHintActivity" 
+            android:launchMode="singleInstance"
+            android:excludeFromRecents="true"
+            android:configChanges="orientation"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="safiap.framework.ACTION_TO_INSTALL" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="safiap.framework.ACTION_TO_INSTALL_IAP" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="safiap.framework.ACTION_NETWORK_ERROR_IAP" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="safiap.framework.ACTION_NETWORK_ERROR_FRAMEWORK" />
+            </intent-filter>
+        </activity>
+        <service android:name="safiap.framework.logreport.monitor.handler.LogreportHandler" android:process=":remote"/>
+       	<!-- android:process="safiap.framework.safframeworkmanager" end -->
+       	
+       	<!-- OpenAPI -->
+       	<activity android:name=".openapi.WBOpenAPIActivity" />
+        <activity android:name=".openapi.WBUserAPIActivity" />
+        <activity android:name=".openapi.WBStatusAPIActivity" />
+        <activity android:name=".openapi.WBCommentAPIActivity" />
+        <activity android:name=".openapi.WBInviteAPIActivity" />
+        <activity android:name=".openapi.WBLogoutAPIActivity" />
+        
+        <!-- 授权认证 -->
+        <activity android:name=".WBAuthActivity" />
+        <activity android:name=".WBAuthCodeActivity" />
+        <activity android:name=".WBShareMainActivity" />
+        
+        <!-- 分享 -->
+        <activity
+            android:name="com.com2us.sharecollection.wxapi.WBShareActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name"
+
+            android:exported="true">
+        </activity>
+        
+        <!-- 必须注册在微博授权，分享微博时候用到 -->
+        <activity android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser" 
+            android:configChanges="keyboardHidden|orientation"
+            android:windowSoftInputMode="adjustResize"
+            android:exported="false" >
+        </activity>
+        
+        <activity
+            android:name="com.tencent.weibo.sdk.android.component.PublishActivity"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.tencent.weibo.sdk.android.component.GeneralInterfaceActivity"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.tencent.weibo.sdk.android.component.ConversationActivity"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.tencent.weibo.sdk.android.component.FriendActivity"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity android:name="com.tencent.weibo.sdk.android.component.Authorize" >
+        </activity>
+        <activity android:name="com.tencent.weibo.sdk.android.component.GeneralDataShowActivity" >
+        </activity>
+        <activity android:name="com.tencent.weibo.sdk.android.component.ReAddActivity" >
+        </activity>
+        
+		<activity
+			android:name="com.tencent.tauth.AuthActivity" 
+			android:noHistory="true" 
+			android:launchMode="singleTask" >
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<category android:name="android.intent.category.BROWSABLE" />
+				<data android:scheme="tencent1103376192" />
+			</intent-filter>
+		</activity>
+        <activity 
+        	android:name="com.tencent.connect.common.AssistActivity"
+			android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+       	
+    </application>
+    
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    
+    <supports-screens android:anyDensity="true"
+                      android:smallScreens="true"
+                      android:normalScreens="true"
+                      android:largeScreens="true"
+                      android:xlargeScreens="true"/>
+
+    
+</manifest> 

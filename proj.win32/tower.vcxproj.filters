@@ -1,0 +1,506 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="win32">
+      <UniqueIdentifier>{84a8ebd7-7cf0-47f6-b75e-d441df67da40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes">
+      <UniqueIdentifier>{bb6c862e-70e9-49d9-81b7-3829a6f50471}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource">
+      <UniqueIdentifier>{715254bc-d70b-4ec5-bf29-467dd3ace079}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\utils">
+      <UniqueIdentifier>{61fd4339-0637-4eb0-a404-0c67ded1d3b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\model">
+      <UniqueIdentifier>{bf4a7589-28fd-4c0a-a60d-66e8ba395b7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\map">
+      <UniqueIdentifier>{e4b4686d-a609-4ade-a0b5-7826dd6e561b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\UI">
+      <UniqueIdentifier>{8f0ca9cf-cf22-47f3-901e-e51f12e46418}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\mutual">
+      <UniqueIdentifier>{b32e2c42-fa87-4de9-a099-c095c9276c25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\scene">
+      <UniqueIdentifier>{46aeaa7a-d7aa-42c0-8c08-12af328b0019}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\cell">
+      <UniqueIdentifier>{ac49edbe-6926-41b4-9f00-3d7dfb3c29c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\cell\item">
+      <UniqueIdentifier>{d6f2ff23-8fb9-4553-a857-c1af9e637a79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\cell\effect">
+      <UniqueIdentifier>{6695581e-7c9c-43ae-acaa-ba50ecada45f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\cell\actor">
+      <UniqueIdentifier>{2a411dfc-97a0-4617-8fe4-7cea0560589e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\buff">
+      <UniqueIdentifier>{96482b3b-785f-49f7-8d01-9d52b113a2d7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AppDelegate.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\model\Model.cpp">
+      <Filter>Classes\model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Global.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\utils\AStar.cpp">
+      <Filter>Classes\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\utils\AnimatePacker.cpp">
+      <Filter>Classes\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\utils\AnimateByGID.cpp">
+      <Filter>Classes\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UI\ItemBagPanel.cpp">
+      <Filter>Classes\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UI\FightPanel.cpp">
+      <Filter>Classes\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UI\StartPanel.cpp">
+      <Filter>Classes\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UI\SimplePanel.cpp">
+      <Filter>Classes\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\mutual\Fight.cpp">
+      <Filter>Classes\mutual</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Detect.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UI\ConveyPanel.cpp">
+      <Filter>Classes\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\scene\StartScene.cpp">
+      <Filter>Classes\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UI\ConfigPanel.cpp">
+      <Filter>Classes\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UI\FilePanel.cpp">
+      <Filter>Classes\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UI\PausePanel.cpp">
+      <Filter>Classes\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UI\ChatPanel.cpp">
+      <Filter>Classes\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UI\PopPanel.cpp">
+      <Filter>Classes\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\utils\SendLuaData.cpp">
+      <Filter>Classes\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\utils\PlotScript.cpp">
+      <Filter>Classes\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\utils\JoyStick.cpp">
+      <Filter>Classes\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UI\EndPanel.cpp">
+      <Filter>Classes\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UI\Prompt.cpp">
+      <Filter>Classes\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UI\BookPanel.cpp">
+      <Filter>Classes\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UI\BubbleLabel.cpp">
+      <Filter>Classes\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UI\JoyStickPanel.cpp">
+      <Filter>Classes\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UI\HudPanel.cpp">
+      <Filter>Classes\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\utils\SpotLight.cpp">
+      <Filter>Classes\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\utils\CSVParse.cpp">
+      <Filter>Classes\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\scene\PreScene.cpp">
+      <Filter>Classes\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UI\PrePanel.cpp">
+      <Filter>Classes\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\mutual\Swap.cpp">
+      <Filter>Classes\mutual</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UI\SwapPanel.cpp">
+      <Filter>Classes\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\utils\Tools.cpp">
+      <Filter>Classes\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\utils\Shake.cpp">
+      <Filter>Classes\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\cell\effect\Effect.cpp">
+      <Filter>Classes\cell\effect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\cell\item\Item.cpp">
+      <Filter>Classes\cell\item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\cell\item\ItemBag.cpp">
+      <Filter>Classes\cell\item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\cell\Cell.cpp">
+      <Filter>Classes\cell</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\scene\GameScene.cpp">
+      <Filter>Classes\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\mutual\ChatManager.cpp">
+      <Filter>Classes\mutual</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\mutual\ChatUnit.cpp">
+      <Filter>Classes\mutual</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\map\Floor.cpp">
+      <Filter>Classes\map</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\map\Tower.cpp">
+      <Filter>Classes\map</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\map\Unit.cpp">
+      <Filter>Classes\map</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\map\World.cpp">
+      <Filter>Classes\map</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\cell\actor\Actor.cpp">
+      <Filter>Classes\cell\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\utils\Altar.cpp">
+      <Filter>Classes\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\mutual\FightSpecial.cpp">
+      <Filter>Classes\mutual</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UI\DiaryPanel.cpp">
+      <Filter>Classes\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\cell\item\SparDisk.cpp">
+      <Filter>Classes\cell\item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UI\SparDiskPanel.cpp">
+      <Filter>Classes\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\mutual\FightNew.cpp">
+      <Filter>Classes\mutual</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UI\PaperPanel.cpp">
+      <Filter>Classes\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\cell\CellFactory.cpp">
+      <Filter>Classes\cell</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UI\LevelUpPanel.cpp">
+      <Filter>Classes\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UI\ShopPanel.cpp">
+      <Filter>Classes\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UI\AchievementPanel.cpp">
+      <Filter>Classes\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UI\EndStatPanel.cpp">
+      <Filter>Classes\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\User.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\buff\Buff.cpp">
+      <Filter>Classes\buff</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UI\BuffUnit.cpp">
+      <Filter>Classes\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UI\BuffPanel.cpp">
+      <Filter>Classes\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UI\AboutPanel.cpp">
+      <Filter>Classes\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\scene\LogoScene.cpp">
+      <Filter>Classes\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UI\LogoPanel.cpp">
+      <Filter>Classes\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UI\ShareAwardPanel.cpp">
+      <Filter>Classes\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UI\SharePanel.cpp">
+      <Filter>Classes\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\JniTest.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UI\MMPanel.cpp">
+      <Filter>Classes\UI</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AppDelegate.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\model\Model.h">
+      <Filter>Classes\model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Global.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\utils\AStar.h">
+      <Filter>Classes\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\TObject.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\utils\AnimatePacker.h">
+      <Filter>Classes\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\utils\Singleton.h">
+      <Filter>Classes\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\utils\AnimateByGID.h">
+      <Filter>Classes\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\utils\StringHandler.h">
+      <Filter>Classes\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\utils\EventHelper.h">
+      <Filter>Classes\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UI\ItemBagPanel.h">
+      <Filter>Classes\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UI\FightPanel.h">
+      <Filter>Classes\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UI\StartPanel.h">
+      <Filter>Classes\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UI\SimplePanel.h">
+      <Filter>Classes\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Detect.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\mutual\Fight.h">
+      <Filter>Classes\mutual</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UI\ConveyPanel.h">
+      <Filter>Classes\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\scene\StartScene.h">
+      <Filter>Classes\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UI\ConfigPanel.h">
+      <Filter>Classes\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UI\FilePanel.h">
+      <Filter>Classes\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UI\PausePanel.h">
+      <Filter>Classes\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UI\ChatPanel.h">
+      <Filter>Classes\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UI\PopPanel.h">
+      <Filter>Classes\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\utils\SendLuaData.h">
+      <Filter>Classes\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\utils\PlotScript.h">
+      <Filter>Classes\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\utils\JoyStick.h">
+      <Filter>Classes\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UI\EndPanel.h">
+      <Filter>Classes\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UI\Prompt.h">
+      <Filter>Classes\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\utils\RichTextCreator.h">
+      <Filter>Classes\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UI\BookPanel.h">
+      <Filter>Classes\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UI\BubbleLabel.h">
+      <Filter>Classes\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UI\JoyStickPanel.h">
+      <Filter>Classes\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UI\HudPanel.h">
+      <Filter>Classes\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\utils\SpotLight.h">
+      <Filter>Classes\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\utils\CSVParse.h">
+      <Filter>Classes\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\scene\PreScene.h">
+      <Filter>Classes\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UI\PrePanel.h">
+      <Filter>Classes\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\mutual\Swap.h">
+      <Filter>Classes\mutual</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UI\SwapPanel.h">
+      <Filter>Classes\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\utils\Tools.h">
+      <Filter>Classes\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\utils\Shake.h">
+      <Filter>Classes\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\cell\effect\Effect.h">
+      <Filter>Classes\cell\effect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\cell\item\Item.h">
+      <Filter>Classes\cell\item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\cell\item\ItemBag.h">
+      <Filter>Classes\cell\item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\cell\Cell.h">
+      <Filter>Classes\cell</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\cell\CellFactory.h">
+      <Filter>Classes\cell</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\scene\GameScene.h">
+      <Filter>Classes\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\mutual\ChatManager.h">
+      <Filter>Classes\mutual</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\mutual\ChatUnit.h">
+      <Filter>Classes\mutual</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\map\Floor.h">
+      <Filter>Classes\map</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\map\Tower.h">
+      <Filter>Classes\map</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\map\Unit.h">
+      <Filter>Classes\map</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\map\World.h">
+      <Filter>Classes\map</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\cell\actor\Actor.h">
+      <Filter>Classes\cell\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\utils\Altar.h">
+      <Filter>Classes\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\mutual\FightSpecial.h">
+      <Filter>Classes\mutual</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UI\DiaryPanel.h">
+      <Filter>Classes\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\cell\item\SparDisk.h">
+      <Filter>Classes\cell\item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UI\SparDiskPanel.h">
+      <Filter>Classes\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\mutual\FightNew.h">
+      <Filter>Classes\mutual</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UI\PaperPanel.h">
+      <Filter>Classes\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UI\LevelUpPanel.h">
+      <Filter>Classes\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UI\ShopPanel.h">
+      <Filter>Classes\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\JniTest.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UI\AchievementPanel.h">
+      <Filter>Classes\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UI\EndStatPanel.h">
+      <Filter>Classes\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\User.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\buff\Buff.h">
+      <Filter>Classes\buff</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\buff\BuffTarget.h">
+      <Filter>Classes\buff</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UI\BuffUnit.h">
+      <Filter>Classes\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UI\BuffPanel.h">
+      <Filter>Classes\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UI\AboutPanel.h">
+      <Filter>Classes\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\scene\LogoScene.h">
+      <Filter>Classes\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UI\LogoPanel.h">
+      <Filter>Classes\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UI\ShareAwardPanel.h">
+      <Filter>Classes\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UI\SharePanel.h">
+      <Filter>Classes\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UI\MMPanel.h">
+      <Filter>Classes\UI</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="game.rc">
+      <Filter>resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

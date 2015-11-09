@@ -1,0 +1,2 @@
+"typeId:int","type:string","typeId1:int","nickName:string","image:string","effectStr:string","duration:float","introduce:string"
+"4001001","Buff","1","速度增益","speed_up.png","moveSpeed:2|fightDelay:0.5","172800","攻击速度和战斗速度同时加倍"
